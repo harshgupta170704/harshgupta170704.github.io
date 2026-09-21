@@ -221,7 +221,7 @@ if (heroSlideshow) {
     const totalImages = 18;
     for (let i = 1; i <= totalImages; i++) {
         const img = document.createElement('img');
-        img.src = `assets/memories/${i}.jpg`;
+        img.src = `assets/memories/${i}.jpg?v=${Date.now()}`;
         if (i === 1) img.classList.add('active');
         heroSlideshow.appendChild(img);
     }
