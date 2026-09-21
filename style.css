@@ -228,6 +228,22 @@ body:hover .cursor-glow {
     z-index: 1;
 }
 
+.iiitian-watermark {
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    font-size: clamp(4rem, 10vw, 8rem);
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.05);
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+    white-space: nowrap;
+}
+
 .hero-content {
     max-width: 800px;
 }
