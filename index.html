@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Gupta — Data Engineer · ML Engineer</title>
+    <meta name="description" content="Data Engineer & ML Engineer building production AI systems, distributed backends, and scalable data pipelines. Codeforces Expert (1788), KVPY Scholar, SIH 2024 Winner, DRDO Research Intern.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">HG<span class="logo-dot">.</span></a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-socials">
+                <a href="https://github.com/harshgupta170704" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/harshgupta170704" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://codeforces.com/profile/Solo_codee" target="_blank" aria-label="Codeforces"><i class="fas fa-code"></i></a>
+                <a href="mailto:harshgupta170704@gmail.com" aria-label="Email" style="display: flex; align-items: center; gap: 8px;">
+                    <i class="fas fa-envelope"></i>
+                    <span style="font-size: 14px; font-family: var(--font-mono); letter-spacing: -0.5px;">harshgupta170704@gmail.com</span>
+                </a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    IIITian · Ex-DRDO · Currently building at Visage (Bombay Shaving Company) · Ex-Axios · Ex-Garuda Aerospace
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Hi, I'm</span>
+                    <span class="hero-name">Harsh Gupta<span class="hero-name-dot">.</span></span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span class="typed-text" id="typedText"></span><span class="typed-cursor">|</span>
+                </p>
+                <p class="hero-description">
+                    I build production <strong>data pipelines</strong>, <strong>ML systems</strong>, and <strong>scalable backends</strong> that survive real-world traffic.
+                    <br>From <strong>embedded systems at DRDO</strong> to <strong>LLM-powered intelligence platforms</strong> — I ship across the full stack.
+                    <br>Codeforces <strong>Expert (1788)</strong> · KVPY Scholar · ICPC Regionalist · SIH 2024 National Winner.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="1788">0</span>
+                        <span class="stat-label">Codeforces Rating</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="27000">0</span>
+                        <span class="stat-label">Users Served</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="900">0</span>
+                        <span class="stat-label">Problems Solved</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="8.5">0.0</span>
+                    <span class="stat-label">CGPA</span>
+                </div>
+                </div>
+            </div>
+            
+            <div class="hero-image-container">
+                <div class="slideshow" id="heroSlideshow">
+                    <!-- Images dynamically injected by JS -->
+                </div>
+                <div class="slideshow-caption">College Snapshots</div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title"><span class="section-number">01.</span> About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I'm a <strong>Data Scientist</strong>, <strong>ML Engineer</strong>, and <strong>Software Developer</strong> with a strong foundation in algorithms, competitive programming (ICPC Regionalist, Codeforces Expert), and building end-to-end ML solutions — from RAG pipelines and fine-tuning Transformers to predictive modeling and real-world deployment.
+                    </p>
+                    <p>
+                        I've worked at <strong>DRDO (Defence Research & Development Organisation)</strong> building secure communication systems for Unmanned Ground Vehicles, and at <strong>Visage (Bombay Shaving Company)</strong> building production data pipelines. I lead the ML team at my college, where I've shipped OCR systems, sensor fusion robotics, and CNN-based disease detection models.
+                    </p>
+                    <p>
+                        I bridge the gap between <strong>hardware and software</strong> — from FPGA digital design and embedded C on PSoC MCUs, to distributed backends in .NET and Python. I've shipped <strong>LLM intelligence platforms</strong>, <strong>hybrid ML recommendation engines</strong> scaling to 27K+ users, and <strong>healthcare NER systems</strong> with 35% latency reduction via ONNX quantization.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <div class="about-photo-wrapper">
+                        <img src="assets/profile.jpg" alt="Harsh Gupta" class="about-photo">
+                    </div>
+                    <div class="about-decorations">
+                        <div class="deco-circle"></div>
+                        <div class="deco-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section section-dark" id="education">
+        <div class="container">
+            <div class="edu-section-header">
+                <div>
+                    <span class="edu-subtitle">ACADEMIC JOURNEY</span>
+                    <h2 class="edu-main-title">Education</h2>
+                    <p class="edu-tagline">Building a strong foundation, one step at a time.</p>
+                </div>
+                <div class="edu-quote-top">
+                    <em>"Same curiosity,<br>bigger horizons."</em>
+                    <div class="edu-quote-line"></div>
+                </div>
+            </div>
+
+            <div class="edu-timeline">
+                <!-- IIIT Bhopal -->
+                <div class="edu-timeline-item">
+                    <div class="edu-timeline-left">
+                        <span class="edu-timeline-year">2023<br>– 2027</span>
+                        <span class="edu-timeline-label">Undergraduate</span>
+                        <div class="edu-timeline-dot"></div>
+                    </div>
+                    <div class="edu-timeline-card">
+                        <div class="edu-timeline-badge">Current</div>
+                        <div class="edu-card-header">
+                            <img src="assets/iiitb-logo.png" alt="IIIT Bhopal" class="edu-card-logo">
+                            <div>
+                                <h3>IIIT Bhopal — Indian Institute of Information Technology</h3>
+                                <p class="edu-card-degree">B.Tech — Electronics & Communication Engineering</p>
+                            </div>
+                        </div>
+                        <div class="edu-card-meta">
+                            <span><i class="far fa-calendar"></i> 2023 – 2027</span>
+                            <span><i class="far fa-star"></i> CGPA: 8.5/10</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Bhopal, India</span>
+                        </div>
+                        <p class="edu-card-desc">Pursuing a strong foundation in electronics, communication systems and their intersection with emerging technologies like AI and embedded systems.</p>
+                        <div class="edu-card-tags">
+                            <span>Communication Systems</span><span>VLSI</span><span>Embedded Systems</span><span>AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IIT Madras -->
+                <div class="edu-timeline-item">
+                    <div class="edu-timeline-left">
+                        <span class="edu-timeline-year">2024<br>– Present</span>
+                        <span class="edu-timeline-label">Online Program</span>
+                        <div class="edu-timeline-dot"></div>
+                    </div>
+                    <div class="edu-timeline-card">
+                        <div class="edu-timeline-badge iitm">Minor</div>
+                        <div class="edu-card-header">
+                            <img src="assets/iitm-logo.svg" alt="IIT Madras" class="edu-card-logo">
+                            <div>
+                                <h3>IIT Madras — Indian Institute of Technology</h3>
+                                <p class="edu-card-degree">Minor in Data Science & Applications</p>
+                            </div>
+                        </div>
+                        <div class="edu-card-meta">
+                            <span><i class="far fa-calendar"></i> 2024 – Present</span>
+                            <span><i class="far fa-file"></i> Online Degree Program</span>
+                            <span><i class="fas fa-map-marker-alt"></i> India</span>
+                        </div>
+                        <p class="edu-card-desc">Developing a strong foundation in data science, machine learning and real-world applications through a rigorous online program.</p>
+                        <div class="edu-card-tags">
+                            <span>Data Science</span><span>Machine Learning</span><span>Statistics</span><span>Real-world Applications</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MIPT -->
+                <div class="edu-timeline-item">
+                    <div class="edu-timeline-left">
+                        <span class="edu-timeline-year">2025<br>– 2026</span>
+                        <span class="edu-timeline-label">International<br>Program</span>
+                        <div class="edu-timeline-dot"></div>
+                    </div>
+                    <div class="edu-timeline-card mipt-card">
+                        <div class="edu-timeline-badge russia">Global</div>
+                        <div class="edu-card-header">
+                            <img src="assets/mipt-logo.svg" alt="MIPT" class="edu-card-logo mipt-logo">
+                            <div>
+                                <h3>MIPT — Moscow Institute of Physics & Technology</h3>
+                                <p class="edu-card-degree">Specialization in Data Science & Computer Vision</p>
+                            </div>
+                        </div>
+                        <div class="edu-card-meta">
+                            <span><i class="far fa-calendar"></i> 2025 – 2026</span>
+                            <span><i class="fas fa-link"></i> via Codeforces (ITMO)</span>
+                            <span><i class="fas fa-globe"></i> Sponsored by EPAM</span>
+                        </div>
+                        <p class="edu-card-desc">Advanced coursework and hands-on projects in machine learning, deep learning and hardware-aware system design.</p>
+                        <div class="edu-card-tags">
+                            <span>Machine Learning</span><span>Deep Learning</span><span>Computer Vision</span><span>System Design</span>
+                        </div>
+                        <img src="assets/mipt-acceptance.png" alt="EPIC Institute of Technology - Acceptance Letter" class="edu-acceptance-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="edu-bottom-quote">
+                <span class="edu-quote-mark">❝</span>
+                <em>Education is not just about learning, but about expanding the horizon of what is possible.</em>
+                <span class="edu-quote-author">— HARSH GUPTA</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-dark" id="experience">
+        <div class="container">
+            <h2 class="section-title"><span class="section-number">02.</span> Experience</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Research Intern — Embedded Systems & Communications</h3>
+                            <span class="timeline-company">Defence Research & Development Organisation (DRDO)</span>
+                        </div>
+                        <span class="timeline-date">May 2025 — Jul 2025 · Dehradun, India</span>
+                        <ul class="timeline-details">
+                            <li>Developed a secure <strong>2.4GHz communication system for Unmanned Ground Vehicles</strong> using PSoC MCUs and Embedded C</li>
+                            <li>Reduced signal distortion by <strong>18%</strong> through hardware optimization and integration of the AMC7834 data acquisition system</li>
+                            <li>Engineered capacitive proximity sensors and built automated data collection dashboards using Python</li>
+                            <li>Developed embedded communication firmware in C; reduced signal noise by 18% via digital filtering</li>
+                            <li>Performed hardware validation and debugging using oscilloscopes and logic analyzers</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Embedded C</span><span>PSoC</span><span>Hardware</span><span>Python</span><span>Signal Processing</span><span>DRDO</span>
+                        </div>
+                        <div class="timeline-gallery">
+                            <img src="assets/drdo-harsh.jpg" alt="Harsh Gupta at DRDO DEAL, Dehradun" class="timeline-photo">
+                            <img src="assets/drdo-logo.png" alt="DRDO - Defence Research & Development Organisation" class="timeline-photo">
+                        </div>
+                        <img src="assets/drdo-certificate.png" alt="DRDO Internship Completion Certificate - Excellent Performance" class="timeline-cert">
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Engineer & Automation Intern</h3>
+                            <span class="timeline-company">Visage Lines Personal Care Pvt. Ltd. (Bombay Shaving Company)</span>
+                        </div>
+                        <span class="timeline-date">May 2026 — Aug 2026 · 100 Days · Gurugram, India</span>
+                        <ul class="timeline-details">
+                            <li>Spearheaded development of <strong>AI-driven Call Intelligence Platform</strong> for support analytics — processing 10K+ daily calls with sentiment classification, category tagging, and agent performance scoring</li>
+                            <li>Automated complex <strong>Myntra B2B reporting pipelines</strong> — eliminating manual Excel workflows and saving 20+ hours/week for the operations team</li>
+                            <li>Engineered <strong>fault-tolerant data extractors</strong> for competitive pricing analysis across e-commerce platforms (Flipkart, Amazon, Nykaa)</li>
+                            <li>Implemented <strong>smart caching models</strong> and migrated credentials to <strong>AWS Secrets Manager</strong> — zero-touch, containerized deployments eliminating hundreds of manual hours</li>
+                            <li>Received <strong>Letter of Recommendation from VP</strong> — praised for "intellectual ability, dedication, and maturity to excel in any challenging environment"</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Python</span><span>PostgreSQL</span><span>Docker</span><span>AWS</span><span>FastAPI</span><span>ETL</span><span>Automation</span><span>Data Engineering</span>
+                        </div>
+                        <div class="timeline-gallery">
+                            <img src="assets/visage-office.png" alt="Harsh at Visage Lines HQ, Gurugram" class="timeline-photo">
+                            <img src="assets/visage-team.jpg" alt="Visage team dinner" class="timeline-photo">
+                        </div>
+                        <div class="timeline-gallery">
+                            <img src="assets/visage-lor.jpg" alt="Letter of Recommendation - VP, Bombay Shaving Company" class="timeline-photo">
+                            <img src="assets/visage-goodies.jpg" alt="Bombay Shaving Company welcome kit" class="timeline-photo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>ML & Robotics Project Lead</h3>
+                            <span class="timeline-company">AXIOS — Machine Learning Club, IIIT Bhopal</span>
+                        </div>
+                        <span class="timeline-date">Jan 2024 — Present · Bhopal, India</span>
+                        <ul class="timeline-details">
+                            <li>Led team of 6 to build <strong>document digitization using CNN + Attention</strong>; achieved 92% character accuracy on historical documents — 25% improvement over Tesseract</li>
+                            <li>Led development of an <strong>OCR pipeline</strong> utilizing Canny edge detection and a custom CNN model</li>
+                            <li>Implemented <strong>MLflow for systematic tracking</strong>; reduced iteration time by 40%; trained 15+ juniors in PyTorch</li>
+                            <li>Managed robotics projects involving <strong>sensor fusion and actuator control</strong> for autonomous navigation</li>
+                            <li>Bridged hardware capabilities with ML models for practical real-time applications</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>PyTorch</span><span>CNN</span><span>MLflow</span><span>OCR</span><span>Robotics</span><span>Team Lead</span>
+                        </div>
+                        <div class="timeline-gallery">
+                            <img src="assets/axios-logo.png" alt="AXIOS - Machine Learning Club, IIIT Bhopal" class="timeline-photo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Robotics Lead</h3>
+                            <span class="timeline-company">Autonomous Systems Team, Garuda Aerospace</span>
+                        </div>
+                        <span class="timeline-date">Jul 2023 — Dec 2023 · Indore, India</span>
+                        <ul class="timeline-details">
+                            <li>Developed a custom <strong>ResNet-18 architecture for agricultural analytics</strong>, boosting disease detection accuracy by 12% using aerial imaging</li>
+                            <li>Built a complete drone system for crop monitoring, integrating flight control, sensor data acquisition, and telemetry</li>
+                            <li>Developed efficient motor control algorithms and power management for extended flight operations</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>ResNet</span><span>CNN</span><span>Drones</span><span>Embedded C</span><span>Computer Vision</span><span>Sensors</span>
+                        </div>
+                        <div class="timeline-gallery">
+                            <img src="assets/garuda-logo.png" alt="Garuda Aerospace - Drones" class="timeline-photo">
+                            <img src="assets/garuda-drone.png" alt="Custom-built drone prototype" class="timeline-photo">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title"><span class="section-number">03.</span> Featured Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card featured">
+                    <div class="project-card-inner">
+                        <div class="project-icon"><i class="fas fa-brain"></i></div>
+                        <div class="project-label">₹28L Project</div>
+                        <h3 class="project-title">Exotel Insyts — Call Intelligence Platform</h3>
+                        <p class="project-desc">
+                            Production-grade <strong>₹28 Lakh</strong> Conversation Intelligence platform built for Exotel. Processes 1,100+ daily calls — ingests raw telecom audio, transcribes via Whisper, classifies sentiment & categories using LLMs, and generates agent performance analytics. Self-correction loop guarantees 100% schema-compliant JSON. Full dashboard with real-time filters, daily breakdowns, and satisfaction scoring.
+                        </p>
+                        <img src="assets/exotel-dashboard.png" alt="Exotel Insyts Dashboard - Call Intelligence" class="project-screenshot">
+                        <div class="project-gallery">
+                            <img src="assets/exotel-analytics.png" alt="Call Analytics - 10K+ calls, time-of-day analysis" class="project-screenshot-sm">
+                            <img src="assets/exotel-command.png" alt="InsytCX Unified Command Center" class="project-screenshot-sm">
+                            <img src="assets/exotel-sentiment.png" alt="Subcategory Details & Daily Sentiment Trend" class="project-screenshot-sm">
+                        </div>
+                        <div class="project-tech">
+                            <span>FastAPI</span><span>ASP.NET Core</span><span>Docker</span><span>OpenAI</span><span>PostgreSQL</span><span>AWS S3</span><span>Nginx</span><span>Whisper</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/harshgupta170704" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="project-card-inner">
+                        <div class="project-icon"><i class="fas fa-stethoscope"></i></div>
+                        <div class="project-label">Featured</div>
+                        <h3 class="project-title">MedVoice ASR — Healthcare Speech Recognition & NER</h3>
+                        <p class="project-desc">
+                            Fine-tuned OpenAI Whisper on medical conversation datasets for clinical speech-to-text, integrated with BioBERT for Named Entity Recognition of symptoms/drugs. Optimized inference via <strong>ONNX quantization reducing latency by 35%</strong>; containerized with Docker for real-time deployment.
+                        </p>
+                        <img src="assets/medvoice-output.png" alt="MedVoice ASR - NER Output with Whisper + BioBERT" class="project-screenshot">
+                        <div class="project-tech">
+                            <span>Whisper</span><span>BioBERT</span><span>ONNX</span><span>Docker</span><span>NER</span><span>FastAPI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/harshgupta170704/medvoice-asr" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="project-card-inner">
+                        <div class="project-icon"><i class="fas fa-cogs"></i></div>
+                        <div class="project-label">Featured</div>
+                        <h3 class="project-title">JobFlow Automation Engine</h3>
+                        <p class="project-desc">
+                            Distributed job scheduling engine with a fault-tolerant task queue using PostgreSQL's SELECT FOR UPDATE SKIP LOCKED. Worker heartbeats, exponential backoff, concurrent job distribution — no Redis needed.
+                        </p>
+                        <img src="assets/jobflow.png" alt="JobFlow Automation Engine Dashboard" class="project-screenshot">
+                        <div class="project-tech">
+                            <span>Next.js</span><span>.NET 9</span><span>PostgreSQL</span><span>Docker</span><span>REST API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/harshgupta170704/Job-Flow-Automation-Engine" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://job-flow-automation-engine.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-icon"><i class="fab fa-youtube"></i></div>
+                        <h3 class="project-title">YouTube AI Assistant (Chrome Extension)</h3>
+                        <p class="project-desc">
+                            Context-aware Chrome extension with multi-model fallback (Gemini, DeepSeek, Groq) and RAG over video transcripts. Features code explanation, Wikipedia knowledge integration, and semantic video search.
+                        </p>
+                        <img src="assets/youtube-ai.png" alt="YouTube AI Assistant" class="project-screenshot">
+                        <div class="project-tech">
+                            <span>Chrome Extension</span><span>RAG</span><span>Gemini</span><span>DeepSeek</span><span>Groq</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/harshgupta170704" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-icon"><i class="fas fa-music"></i></div>
+                        <h3 class="project-title">Grand Line Music — AI Recommendation Engine</h3>
+                        <p class="project-desc">
+                            Hybrid ML pipeline (KNN content-based → SVD collaborative filtering) scaled to <strong>27K+ active users</strong>. Infinite scroll virtualization, command palette, mood filters, YouTube playback. Deployed on Render.
+                        </p>
+                        <img src="assets/grandline-music.png" alt="Grand Line Music - AI Recommendation Engine UI" class="project-screenshot">
+                        <div class="project-tech">
+                            <span>FastAPI</span><span>Scikit-Learn</span><span>KNN</span><span>SVD</span><span>SQLite</span><span>YouTube API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/harshgupta170704/Luffy-Music-Player" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://luffy-music-player-1.onrender.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-icon"><i class="fas fa-helicopter"></i></div>
+                        <h3 class="project-title">Agricultural Analytics Drone</h3>
+                        <p class="project-desc">
+                            Complete drone system for crop monitoring with CNN-based real-time crop disease detection (12% accuracy boost). Integrated flight control, sensor data acquisition, telemetry, and efficient motor control algorithms.
+                        </p>
+                        <img src="assets/agri-drone.jpg" alt="Agricultural Analytics Drone for Crop Monitoring" class="project-screenshot">
+                        <div class="project-tech">
+                            <span>Embedded C</span><span>Python</span><span>CNN</span><span>Sensors</span><span>Telemetry</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/harshgupta170704" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-icon"><i class="fas fa-microchip"></i></div>
+                        <h3 class="project-title">FPGA Digital Design Projects</h3>
+                        <p class="project-desc">
+                            Designed and simulated fundamental digital circuits (counters, FSMs, ALU components) for FPGA implementation. Developed a pipelined processing unit with timing optimization. Studied MIPT-ILab GitHub projects for advanced computer architecture.
+                        </p>
+                        <div class="project-tech">
+                            <span>VHDL</span><span>Vivado</span><span>ModelSim</span><span>FPGA</span><span>RTL Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/harshgupta170704" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3 class="project-title">E-Commerce Intelligence Suite</h3>
+                        <p class="project-desc">
+                            Automated price tracking and competitive intelligence bots for Zepto, Blinkit, and Instamart. Reverse-engineered anti-bot defenses, geolocation gating, and dynamic rendering across 10+ Indian cities.
+                        </p>
+                        <img src="assets/ecommerce-bot.png" alt="E-Commerce Intelligence Bot scraping Instamart" class="project-screenshot">
+                        <div class="project-tech">
+                            <span>Python</span><span>Selenium</span><span>Playwright</span><span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/harshgupta170704/Zepto-Data-Scraper-BOT" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="project-card-inner">
+                        <div class="project-icon"><i class="fas fa-chart-area"></i></div>
+                        <div class="project-label">Fintech</div>
+                        <h3 class="project-title">Bluestock — Mutual Fund Performance Analytics</h3>
+                        <p class="project-desc">
+                            End-to-end financial analytics platform tracking <strong>₹6.27M AUM</strong> across 2K+ investors. Built interactive Power BI dashboards for NAV trend analysis, fund house benchmarking (Top 10 by AUM), category distribution, and SIP inflow tracking. Engineered a clean data pipeline processing 15+ fund metrics with alpha generation analysis (<strong>9.27% avg alpha</strong>, <strong>15.85% CAGR 3Y</strong>).
+                        </p>
+                        <img src="assets/bluestock-dashboard.png" alt="Bluestock Mutual Fund Performance Dashboard" class="project-screenshot">
+                        <div class="project-gallery">
+                            <img src="assets/bluestock-risk.png" alt="Risk vs Return & Sharpe Ratio Analysis" class="project-screenshot-sm">
+                            <img src="assets/bluestock-investors.png" alt="Investor Analytics - Transaction by State" class="project-screenshot-sm">
+                            <img src="assets/bluestock-sip.png" alt="SIP & Market Trends" class="project-screenshot-sm">
+                        </div>
+                        <div class="project-tech">
+                            <span>Power BI</span><span>Python</span><span>SQL</span><span>DAX</span><span>ETL</span><span>Data Modeling</span><span>Financial Analytics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/harshgupta170704" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="project-card-inner">
+                        <div class="project-icon"><i class="fas fa-hand-paper"></i></div>
+                        <div class="project-label">Edge AI</div>
+                        <h3 class="project-title">Gesture-to-Sentence System</h3>
+                        <p class="project-desc">
+                            Real-time hand gesture to sentence translator running 100% locally on edge devices. Uses Google's <strong>MediaPipe</strong> with a temporal tracking pipeline and debouncing algorithm for stable classification. Features offline Text-to-Speech (pyttsx3), Server-Sent Events (SSE) for zero-lag UI updates, and threaded camera I/O.
+                        </p>
+                        <img src="assets/gesture-ai.png" alt="Real-Time Hand Gesture to Sentence System" class="project-screenshot">
+                        <div class="project-tech">
+                            <span>Python</span><span>MediaPipe</span><span>Computer Vision</span><span>Edge AI</span><span>SSE</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/harshgupta170704/Rasberry-pie-Controller" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="project-card-inner">
+                        <div class="project-icon"><i class="fas fa-utensils"></i></div>
+                        <div class="project-label">AI App</div>
+                        <h3 class="project-title">FridgeChef</h3>
+                        <p class="project-desc">
+                            Smart recipe recommendation platform that turns available ingredients into gourmet meals. Features an intuitive UI with step-by-step guided cooking modes, dynamic ingredient scaling, and AI-estimated macro-nutritional tracking.
+                        </p>
+                        <img src="assets/fridgechef.png" alt="FridgeChef - Smart Recipe App" class="project-screenshot">
+                        <div class="project-tech">
+                            <span>UI/UX</span><span>Frontend</span><span>AI Integration</span><span>Web</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/harshgupta170704" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-icon"><i class="fas fa-gamepad"></i></div>
+                        <h3 class="project-title">Super Mario Clone</h3>
+                        <p class="project-desc">
+                            A fully functional recreation of the classic Super Mario game featuring custom physics, collision detection, and level design mechanics. Includes a detailed video breakdown explaining the core logic and architecture.
+                        </p>
+                        <video controls class="project-screenshot" src="assets/super-mario.mp4"></video>
+                        <div class="project-tech">
+                            <span>Game Development</span><span>OOP</span><span>Physics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-icon"><i class="fas fa-border-all"></i></div>
+                        <h3 class="project-title">Algorithmic Sudoku Solver</h3>
+                        <p class="project-desc">
+                            An interactive application that visually demonstrates the <strong>Backtracking algorithm</strong> solving a Sudoku puzzle in real-time. Features step-by-step execution to showcase recursive problem-solving.
+                        </p>
+                        <video controls class="project-screenshot" src="assets/sudoku-solver.mp4"></video>
+                        <div class="project-tech">
+                            <span>Algorithms</span><span>Backtracking</span><span>Recursion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-icon"><i class="fas fa-sort-amount-down-alt"></i></div>
+                        <h3 class="project-title">Sorting Visualizer</h3>
+                        <p class="project-desc">
+                            A dynamic visualization tool for popular sorting algorithms (Bubble Sort, Merge Sort, Quick Sort). Demonstrates the internal mechanics of array swaps and time complexity differences through animated bars.
+                        </p>
+                        <video controls class="project-screenshot" src="assets/sorting-visualizer.mp4"></video>
+                        <div class="project-tech">
+                            <span>Data Structures</span><span>Algorithms</span><span>Visualization</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="section section-dark" id="research">
+        <div class="container">
+            <h2 class="section-title"><span class="section-number">04.</span> Research & Publications</h2>
+            <div class="research-detailed">
+                <div class="research-content">
+                    <div class="research-badge" style="display: inline-block; padding: 6px 12px; background: rgba(0, 212, 170, 0.1); color: var(--accent); border-radius: 4px; font-size: 14px; font-weight: 500; margin-bottom: 16px;">In Preparation</div>
+                    <h3 class="research-heading">HybridTumorNet: 3D Tumor Infiltration Solver (PINNs + CNNs)</h3>
+                    <p class="research-text">
+                        A novel 3-head deep learning architecture designed to model glioblastoma tumor growth by coupling <strong>Physics-Informed Neural Networks (PINNs)</strong> with 3D CNNs. Built on a <strong>MONAI 3D ResNet-50</strong> backbone pre-trained on medical datasets.
+                    </p>
+                    <ul class="timeline-details">
+                        <li><strong>Multi-Parametric MRI Inputs:</strong> Processes T1, T1ce, T2, and FLAIR modalities from the BraTS 2021 dataset as a unified 4-channel 3D volume.</li>
+                        <li><strong>Three Independent Decoder Heads:</strong>
+                            <br>1. <em>Density Decoder:</em> Predicts continuous tumor cell density field <span style="font-family: var(--font-mono)">u(x,t)</span>.
+                            <br>2. <em>Physics Decoder:</em> Infers spatio-variant biophysical parameters (Diffusion Coefficient <span style="font-family: var(--font-mono)">D(x)</span> & Proliferation Rate <span style="font-family: var(--font-mono)">ρ(x)</span>).
+                            <br>3. <em>Segmentation Decoder:</em> Outputs multi-class softmax segmentation for tumor sub-regions.
+                        </li>
+                        <li><strong>Governing Physics:</strong> Integrates the <strong>Fisher-KPP reaction-diffusion equation</strong> directly into the multi-task loss function to enforce biological constraints.</li>
+                        <li><strong>Clinical Application:</strong> Capable of forecasting tumor density at 30+ days via PDE simulation, visualized using ITK-SNAP.</li>
+                    </ul>
+                    <div class="project-tech" style="margin-top: auto; padding-top: 20px;">
+                        <span>PyTorch</span><span>MONAI</span><span>3D ResNet-50</span><span>PINNs</span><span>Fisher-KPP</span><span>BraTS</span><span>ITK-SNAP</span>
+                    </div>
+                </div>
+                <div class="research-gallery">
+                    <img src="assets/research-architecture.jpg" alt="HybridTumorNet 3-Head Architecture Diagram" class="research-img">
+                    <div class="research-img-row">
+                        <img src="assets/research-inference.jpg" alt="Patient Inference Outputs: T1, T2, FLAIR, PDE Simulation" class="research-img">
+                        <img src="assets/research-itksnap.jpg" alt="ITK-SNAP 3D Segmentation of Brain Tumor" class="research-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title"><span class="section-number">05.</span> Tech Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">Embedded C</span>
+                        <span class="skill-tag">VHDL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> ML / Deep Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow / Keras</span>
+                        <span class="skill-tag">Scikit-Learn</span>
+                        <span class="skill-tag">XGBoost</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">MONAI</span>
+                        <span class="skill-tag">Hugging Face Transformers</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-robot"></i> LLMs & NLP</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">LlamaIndex</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">BERT</span>
+                        <span class="skill-tag">GPT</span>
+                        <span class="skill-tag">Groq</span>
+                        <span class="skill-tag">FAISS</span>
+                        <span class="skill-tag">ONNX</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend & Data</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">.NET / ASP.NET Core</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Feature Engineering</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> DevOps & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">MLflow</span>
+                        <span class="skill-tag">AWS (EC2, S3)</span>
+                        <span class="skill-tag">Nginx</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Playwright</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-microchip"></i> Hardware & Embedded</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">FPGA (Xilinx)</span>
+                        <span class="skill-tag">RTL Design</span>
+                        <span class="skill-tag">PSoC / ARM Cortex</span>
+                        <span class="skill-tag">SDR Concepts</span>
+                        <span class="skill-tag">Vivado / ModelSim</span>
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">Oscilloscopes</span>
+                        <span class="skill-tag">ROS Basics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section section-dark" id="achievements">
+        <div class="container">
+            <h2 class="section-title"><span class="section-number">06.</span> Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>Codeforces Expert</h3>
+                    <p>Max rating <strong>1788</strong> — Top 3% globally. <strong>900+ problems solved</strong> across Codeforces, LeetCode (700+), and other platforms.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                    <h3>KVPY Scholar 2021</h3>
+                    <p>Kishore Vaigyanik Protsahan Yojana — <strong>Dept. of Science & Technology, Govt. of India</strong>. National-level science research scholarship.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-award"></i></div>
+                    <h3>SIH 2024 — 1st Place</h3>
+                    <p><strong>National Winner</strong> at Smart India Hackathon 2024 (Hardware/Embedded Systems Track) — AI-powered drone for agriculture.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-globe"></i></div>
+                    <h3>ICPC Regionalist 2024</h3>
+                    <p><strong>Rank 420 among 5000+ coders</strong> from IITs, NITs, IIITs. Qualified for ICPC Asia Regional — world's most prestigious collegiate programming competition.</p>
+                    <img src="assets/icpc-quantfest.png" alt="ICPC Regionalist - Quantfest 2025 - Jane Street" class="achievement-img">
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Kaggle — Top 10%</h3>
+                    <p>"House Prices" (<strong>0.121 RMSLE</strong>); Top 12% in "NLP with Disaster Tweets". Multiple predictive modeling & data analysis competitions.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fab fa-facebook"></i></div>
+                    <h3>Facebook Hackercup 2024</h3>
+                    <p><strong>5th Rank</strong> in Facebook Hacker Cup 2024 — competitive programming competition by Meta.</p>
+                    <img src="assets/hackercup.jpg" alt="Meta Hacker Cup T-Shirt" class="achievement-img">
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>AMS Derive'26 — Rank 142</h3>
+                    <p><strong>Rank 142</strong> in PRIOR round of Derive'26 — India's premier quantitative finance competition. Sponsored by <strong>Jane Street</strong> & <strong>QRT</strong>.</p>
+                    <img src="assets/ams-derive-cert.png" alt="AMS Derive Certificate - Rank 142" class="achievement-img">
+                </div>
+            </div>
+            <!-- Certifications -->
+            <div class="certs-section">
+                <h3 class="certs-title"><i class="fas fa-certificate"></i> Certifications</h3>
+                <div class="certs-grid">
+                    <div class="cert-item">
+                        <span class="cert-date">May 2024</span>
+                        <span class="cert-name">Deep Learning Specialization — deeplearning.ai (5 courses)</span>
+                    </div>
+                    <div class="cert-item">
+                        <span class="cert-date">Mar 2024</span>
+                        <span class="cert-name">Hugging Face NLP Course — Transformers, Fine-tuning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title"><span class="section-number">07.</span> Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-text">
+                    I'm actively looking for <strong>Data Engineering</strong>, <strong>ML Engineering</strong>, and <strong>Software Development</strong> opportunities. 
+                    Whether you have a role, a research collaboration, or just want to talk tech — my inbox is always open.
+                </p>
+                <a href="mailto:harshgupta170704@gmail.com" class="btn btn-primary btn-large">
+                    Namaste 🙏
+                </a>
+                <div class="contact-links" style="margin-top: 30px;">
+                    <a href="mailto:harshgupta170704@gmail.com" style="color: var(--accent); font-family: var(--font-mono); font-size: 18px; width: 100%; text-align: center; margin-bottom: 20px;">
+                        <i class="fas fa-envelope"></i> harshgupta170704@gmail.com
+                    </a>
+                    <a href="https://github.com/harshgupta170704" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://linkedin.com/in/harshgupta170704" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                    <a href="https://codeforces.com/profile/Solo_codee" target="_blank"><i class="fas fa-code"></i> Codeforces</a>
+                    <a href="https://leetcode.com/u/Solo_codee/" target="_blank"><i class="fas fa-laptop-code"></i> LeetCode</a>
+                    <a href="tel:+919009122239"><i class="fas fa-phone"></i> +91 9009122239</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Designed & Built by <strong>Harsh Gupta</strong></p>
+        <p class="footer-sub">Built with vanilla HTML, CSS, JS — no frameworks needed.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" rx="20" fill="#1a237e"/>
+  <text x="100" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white">MIPT</text>
+  <text x="100" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#90caf9">MOSCOW INSTITUTE OF</text>
+  <text x="100" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#90caf9">PHYSICS &amp; TECHNOLOGY</text>
+  <line x1="50" y1="135" x2="150" y2="135" stroke="#42a5f5" stroke-width="2"/>
+  <text x="100" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#bbdefb">Физтех</text>
+  <!-- Atom-like decoration -->
+  <ellipse cx="100" cy="170" rx="20" ry="8" fill="none" stroke="#42a5f5" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="100" cy="170" r="3" fill="#42a5f5" opacity="0.7"/>
+</svg>
