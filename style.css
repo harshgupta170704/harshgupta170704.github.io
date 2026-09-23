@@ -1,5 +1,5 @@
 /* ========================================
-   HARSH GUPTA PORTFOLIO Ã¢â‚¬â€ STYLE.CSS
+   HARSH GUPTA PORTFOLIO — STYLE.CSS
    Modern Dark Theme | ML + Data Eng + SDE
    ======================================== */
 
@@ -229,8 +229,8 @@ body:hover .cursor-glow {
 
 .hero-bg-grid {
     position: absolute;
-    z-index: 2;
     inset: 0;
+    z-index: 2;
     background-image: 
         linear-gradient(rgba(148, 163, 184, 0.03) 1px, transparent 1px),
         linear-gradient(90deg, rgba(148, 163, 184, 0.03) 1px, transparent 1px);
@@ -1198,7 +1198,7 @@ body:hover .cursor-glow {
 }
 
 .timeline-details li::before {
-    content: 'Ã¢â€“Â¸';
+    content: '▸';
     position: absolute;
     left: 0;
     color: var(--accent);
